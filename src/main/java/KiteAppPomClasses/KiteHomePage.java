@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Reporter;
 
 public class KiteHomePage 
 {
@@ -24,5 +25,6 @@ public void clickOnLogOutButton() throws InterruptedException
 	UserID.click();
 	Thread.sleep(1000);
 	logOut.click();
+	Reporter.log("Logout successfully");
 }
 }
