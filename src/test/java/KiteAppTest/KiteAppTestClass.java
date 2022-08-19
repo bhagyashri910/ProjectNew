@@ -18,6 +18,7 @@ import java.time.Duration;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 //import org.testng.annotations.BeforeTest;
 //import org.testng.annotations.AfterTest;
@@ -62,13 +63,14 @@ public class KiteAppTestClass extends Base
   public void openBrowser() throws InterruptedException
   {
 	 launchBrowser();
-	 
+	 Reporter.log("open browser sucessfully",true);
   }
 
   @AfterClass
   public void closingBrowser()
   {
 	  closeBrowser();
+	  Reporter.log("clossing browser succesfully",true);
   }
 
   
